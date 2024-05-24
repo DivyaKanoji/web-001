@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+       <title>Regex</title>
+    </head>
+    <body>
+        <h2>A Javascript example</h2>
+        <p id="demo"></p>
+        <button type="button" onclick="myFunc()">Click me!</button>
+        <script>
+            function myFunc() {
+                // Regex /
+
+                // 1. Literal Characters => '/hello'
+                // 2. Character classes => "[apple]"
+                // 3. Quantifiers =>
+                    // '+' => matches one or more occurs
+                    // '*' => matches zero or more occurs
+                    // '?' => matches zero or one occur
+
+                // 4. Anchors =>
+                    // '^' => matches begin of the string  
+                    // '$' => matches the end
+                    
+                // 5. Modifiers
+                    // i => matches the case-sensitive
+                    // g => performs global match
+                    
+                let pattern = /dog/;
+                let string = "I have a dog and a cat"
+                console.log(pattern.test(string)) //true 
+            }
+        </script>
+    </body>
+</html>
